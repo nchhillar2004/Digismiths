@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.box, .mybox {
+  width: 50px;
+  height: 50px;
+  margin: 4px;
+  border-radius: 6px;
+  background-color: red;
+}
+
+.box2 {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+  margin: 4px;
+  border-radius: 6px;
+}
+
+.bounce {
+  background-color: red;
+}
+
+.power {
+  background-color: blue;
+}
+
+.elastic {
+  background-color: green;
+}
+
+.back {
+  background-color: black;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.scene {
+  width: 150px;
+  height: 150px;
+  background-color: #1877f2;
+  margin: 20px;
+  border-radius: 12px;
+}
