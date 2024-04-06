@@ -4,6 +4,8 @@ gsap.from(".box", {
   delay: 0.5,
   duration: 1.5,
   ease: "elastic.out(1, 0.3)",
+  yoyo: true,
+  delay: 1,
   repeat: -1,
 });
 
@@ -69,17 +71,17 @@ timeline
 timeline.play();
 
 // Assignment 4
-
+var paths = [
+  { x: 0, y: 0 },
+  { x: 100, y: 100 },
+  { x: 300, y: 0 },
+  { x: 450, y: 200 },
+  { x: 600, y: 0 },
+];
 gsap.to(".ball", {
   duration: 2,
   motionPath: {
-    path: [
-      { x: 0, y: 0 },
-      { x: 100, y: 100 },
-      { x: 300, y: 0 },
-      { x: 450, y: 200 },
-      { x: 600, y: 0 },
-    ],
+    path: paths,
   },
   ease: "power1.inOut",
   onComplete() {
